@@ -1,0 +1,101 @@
+2021-03-01 17:32:30.689 DEBUG 9708 --- [main] org.hibernate.SQL                        : create table persona (id bigint not null, cognome varchar(255), data_nascita date, nome varchar(255), primary key (id)) engine=InnoDB
+2021-03-01 17:32:31.154  WARN 9708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:33:18.980  WARN 16412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:33:56.932  WARN 23536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:34:38.924  WARN 11508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:35:05.571 DEBUG 11508 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select persona0_.id as id1_0_, persona0_.cognome as cognome2_0_, persona0_.data_nascita as data_nas3_0_, persona0_.nome as nome4_0_ from persona persona0_
+2021-03-01 17:36:06.731 DEBUG 18840 --- [main] org.hibernate.SQL                        : create table hibernate_sequence (next_val bigint) engine=InnoDB
+2021-03-01 17:36:06.793 DEBUG 18840 --- [main] org.hibernate.SQL                        : insert into hibernate_sequence values ( 1 )
+2021-03-01 17:36:06.872 DEBUG 18840 --- [main] org.hibernate.SQL                        : create table persona (id bigint not null, cognome varchar(255), data_nascita date, nome varchar(255), primary key (id)) engine=InnoDB
+2021-03-01 17:36:07.327  WARN 18840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:37:00.875 DEBUG 18840 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select persona0_.id as id1_0_, persona0_.cognome as cognome2_0_, persona0_.data_nascita as data_nas3_0_, persona0_.nome as nome4_0_ from persona persona0_
+2021-03-01 17:39:05.990  WARN 23108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:39:13.862 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select persona0_.id as id1_0_, persona0_.cognome as cognome2_0_, persona0_.data_nascita as data_nas3_0_, persona0_.nome as nome4_0_ from persona persona0_
+2021-03-01 17:39:13.889 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:39:13.891 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:39:13.912 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:39:13.914 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Rossi]
+2021-03-01 17:39:13.915 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2021-03-01]
+2021-03-01 17:39:13.917 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Mario]
+2021-03-01 17:39:13.918 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [1]
+2021-03-01 17:39:13.923 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:39:13.924 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:39:13.928 DEBUG 23108 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:39:13.928 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bianchi]
+2021-03-01 17:39:13.929 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2011-03-01]
+2021-03-01 17:39:13.929 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Antonio]
+2021-03-01 17:39:13.929 TRACE 23108 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [2]
+2021-03-01 17:41:16.367  WARN 1084 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:41:20.787 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from persona
+2021-03-01 17:41:20.817 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:41:20.819 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:41:20.839 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:41:20.844 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Rossi]
+2021-03-01 17:41:20.845 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2021-03-01]
+2021-03-01 17:41:20.848 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Mario]
+2021-03-01 17:41:20.850 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [3]
+2021-03-01 17:41:20.857 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:41:20.859 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:41:20.864 DEBUG 1084 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:41:20.864 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bianchi]
+2021-03-01 17:41:20.864 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2011-03-01]
+2021-03-01 17:41:20.865 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Antonio]
+2021-03-01 17:41:20.865 TRACE 1084 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4]
+2021-03-01 17:44:10.209  WARN 6116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:44:14.590 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from persona
+2021-03-01 17:44:14.621 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:44:14.623 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:44:14.656 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:44:14.660 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Rossi]
+2021-03-01 17:44:14.662 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2021-03-01]
+2021-03-01 17:44:14.666 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Mario]
+2021-03-01 17:44:14.668 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [5]
+2021-03-01 17:44:14.681 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:44:14.683 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:44:14.690 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:44:14.692 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bianchi]
+2021-03-01 17:44:14.693 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2011-03-01]
+2021-03-01 17:44:14.694 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Antonio]
+2021-03-01 17:44:14.695 TRACE 6116 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [6]
+2021-03-01 17:44:14.790 DEBUG 6116 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select persona0_.id as id1_0_, persona0_.cognome as cognome2_0_, persona0_.data_nascita as data_nas3_0_, persona0_.nome as nome4_0_ from persona persona0_
+2021-03-01 17:51:52.440  WARN 13012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:52:10.166 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from persona
+2021-03-01 17:52:10.190 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:52:10.192 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:52:10.217 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:52:10.219 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Rossi]
+2021-03-01 17:52:10.220 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2021-03-01]
+2021-03-01 17:52:10.222 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Mario]
+2021-03-01 17:52:10.222 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [7]
+2021-03-01 17:52:10.229 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:52:10.230 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:52:10.234 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:52:10.235 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bianchi]
+2021-03-01 17:52:10.236 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2011-03-01]
+2021-03-01 17:52:10.236 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Antonio]
+2021-03-01 17:52:10.237 TRACE 13012 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [8]
+2021-03-01 17:52:10.281 DEBUG 13012 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select persona0_.id as id1_0_, persona0_.cognome as cognome2_0_, persona0_.data_nascita as data_nas3_0_, persona0_.nome as nome4_0_ from persona persona0_
+2021-03-01 17:53:36.883  WARN 7636 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 17:53:45.586 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from persona
+2021-03-01 17:53:45.613 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:53:45.616 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:53:45.638 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:53:45.641 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Rossi]
+2021-03-01 17:53:45.642 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2021-03-01]
+2021-03-01 17:53:45.644 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Mario]
+2021-03-01 17:53:45.645 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [9]
+2021-03-01 17:53:45.654 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:53:45.655 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:53:45.660 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:53:45.661 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bianchi]
+2021-03-01 17:53:45.661 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2011-03-01]
+2021-03-01 17:53:45.661 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Antonio]
+2021-03-01 17:53:45.661 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [10]
+2021-03-01 17:53:45.667 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-01 17:53:45.669 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-01 17:53:45.674 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into persona (cognome, data_nascita, nome, id) values (?, ?, ?, ?)
+2021-03-01 17:53:45.674 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Verdi]
+2021-03-01 17:53:45.675 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2001-03-01]
+2021-03-01 17:53:45.675 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Elisabetta]
+2021-03-01 17:53:45.675 TRACE 7636 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [11]
+2021-03-01 17:53:45.712 DEBUG 7636 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select persona0_.id as id1_0_, persona0_.cognome as cognome2_0_, persona0_.data_nascita as data_nas3_0_, persona0_.nome as nome4_0_ from persona persona0_
