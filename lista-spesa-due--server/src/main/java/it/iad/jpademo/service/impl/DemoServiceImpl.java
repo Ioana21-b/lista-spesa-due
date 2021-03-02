@@ -1,7 +1,9 @@
 package it.iad.jpademo.service.impl;
 
 import it.iad.jpademo.model.Persona;
+import it.iad.jpademo.model.Prodotto;
 import it.iad.jpademo.repository.PersonaRepository;
+import it.iad.jpademo.repository.ProdottoRepository;
 import it.iad.jpademo.service.DemoService;
 import java.time.LocalDate;
 import java.util.Iterator;
@@ -14,6 +16,8 @@ public class DemoServiceImpl implements DemoService {
 
     @Autowired
     PersonaRepository personaRepository;
+    @Autowired
+    ProdottoRepository prodottoRepository;
 
     @Override
     public void demo() {
@@ -44,6 +48,22 @@ public class DemoServiceImpl implements DemoService {
             Persona next = iter.next();
             System.out.println(next);
         }
+    }
+    
+    
+
+    @Override
+    public void aggiungi(Prodotto p) {
+        System.out.println("Hai aggiunto: " + p.toString());
+       prodottoRepository.save(p);
+        
+        
+    }
+
+    @Override
+    public void rimuoviAll() {
+        System.out.println("Hai rimosso tutto");
+        prodottoRepository.deleteAllInBatch();
     }
 
 }
