@@ -26,4 +26,10 @@ public class DemoController {
                 System.out.println("Siamo nel controller aggiungi");
                 demoService.aggiungi(prodottoDto.getProdotto());
         }
+    
+    @RequestMapping("/reset")
+    public void reset(){
+                System.out.println("Siamo nel controller reset");
+                demoService.reset();
+        }
 }

@@ -6,5 +6,5 @@ public interface DemoService {
 
     void demo();
     void aggiungi(Prodotto p);
-    void rimuoviAll();
+    void reset();
 }

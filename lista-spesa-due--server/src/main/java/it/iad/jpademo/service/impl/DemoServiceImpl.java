@@ -61,7 +61,7 @@ public class DemoServiceImpl implements DemoService {
     }
 
     @Override
-    public void rimuoviAll() {
+    public void reset() {
         System.out.println("Hai rimosso tutto");
         prodottoRepository.deleteAllInBatch();
     }
