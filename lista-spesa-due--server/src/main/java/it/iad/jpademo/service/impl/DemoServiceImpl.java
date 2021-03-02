@@ -66,4 +66,10 @@ public class DemoServiceImpl implements DemoService {
         prodottoRepository.deleteAllInBatch();
     }
 
+    @Override
+    public List<Prodotto> stampaLista() {
+        List<Prodotto> lista = prodottoRepository.findAll();
+        return lista;
+    }
+
 }
