@@ -49,27 +49,26 @@ public class DemoServiceImpl implements DemoService {
             System.out.println(next);
         }
     }
-    
-    
 
     @Override
-    public void aggiungi(Prodotto p) {
+    public List<Prodotto> aggiungi(Prodotto p) {
         System.out.println("Hai aggiunto: " + p.toString());
        prodottoRepository.save(p);
-        
-        
-    }
-
-    @Override
-    public void reset() {
-        System.out.println("Hai rimosso tutto");
-        prodottoRepository.deleteAllInBatch();
-    }
-
-    @Override
-    public List<Prodotto> stampaLista() {
         List<Prodotto> lista = prodottoRepository.findAll();
         return lista;
     }
 
+    @Override
+    public List<Prodotto> reset() {
+        System.out.println("Hai rimosso tutto");
+        prodottoRepository.deleteAllInBatch();
+        List<Prodotto> lista = prodottoRepository.findAll();
+        return lista;
+    }
+
+    @Override
+    public List<Prodotto> mostraLista() {
+        List<Prodotto> lista = prodottoRepository.findAll();
+        return lista;
+    }
 }

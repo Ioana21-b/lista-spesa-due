@@ -24,24 +24,25 @@ public class DemoController {
         System.out.println("Siamo nel controller demo");
         demoService.demo();
     }
-    
-    @RequestMapping("/aggiungi")
-    public void aggiungi( @RequestBody ProdottoDto prodottoDto ){
-                System.out.println("Siamo nel controller aggiungi");
-                demoService.aggiungi(prodottoDto.getProdotto());
-        }
-    
-    @RequestMapping("/reset")
-    public void reset(){
-                System.out.println("Siamo nel controller reset");
-                demoService.reset();
-        }
 
-        @RequestMapping("/mostraLista")
+    @RequestMapping("/aggiungi")
+    public ListaDto aggiungi(@RequestBody ProdottoDto prodottoDto) {
+        System.out.println("Siamo nel controller aggiungi");
+        List<Prodotto> lista = demoService.aggiungi(prodottoDto.getProdotto());
+        return new ListaDto(lista);
+    }
+
+    @RequestMapping("/reset")
+    public ListaDto reset() {
+        System.out.println("Siamo nel controller reset");
+        List<Prodotto> lista = demoService.reset();
+        return new ListaDto(lista);
+    }
+
+    @RequestMapping("/mostraLista")
     public ListaDto mostraLista() {
-        List<Prodotto> lista = demoService.stampaLista();
-        /*ListaDto dto = new ListaDto(lista);
-        return dto; */
+        System.out.println("Siamo nel controller mostraLista");
+        List<Prodotto> lista = demoService.mostraLista();
         return new ListaDto(lista);
     }
 }

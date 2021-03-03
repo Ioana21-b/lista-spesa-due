@@ -112,3 +112,92 @@
 2021-03-03 12:33:20.361 DEBUG 13996 --- [main] org.hibernate.SQL                        : create table persona (id bigint not null, cognome varchar(255), data_nascita date, nome varchar(255), primary key (id)) engine=InnoDB
 2021-03-03 12:33:20.478 DEBUG 13996 --- [main] org.hibernate.SQL                        : create table prodotto (nome varchar(255) not null, primary key (nome)) engine=InnoDB
 2021-03-03 12:33:21.607  WARN 13996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 12:50:01.409  WARN 22660 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 13:05:50.422  WARN 22660 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: it.iad.jpademo.dto.ProdottoDto["prodotto"])]
+2021-03-03 13:06:26.192  WARN 22660 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void it.iad.jpademo.controller.DemoController.aggiungi(it.iad.jpademo.dto.ProdottoDto)]
+2021-03-03 13:11:32.852  WARN 22660 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: it.iad.jpademo.dto.ProdottoDto["prodotto"])]
+2021-03-03 13:11:35.146  WARN 22660 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void it.iad.jpademo.controller.DemoController.aggiungi(it.iad.jpademo.dto.ProdottoDto)]
+2021-03-03 13:12:33.038  WARN 22660 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void it.iad.jpademo.controller.DemoController.aggiungi(it.iad.jpademo.dto.ProdottoDto)]
+2021-03-03 13:13:41.564  WARN 22660 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: it.iad.jpademo.dto.ProdottoDto["prodotto"])]
+2021-03-03 13:15:16.653  WARN 22660 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: it.iad.jpademo.dto.ProdottoDto["prodotto"])]
+2021-03-03 13:15:38.249  WARN 22660 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: it.iad.jpademo.dto.ProdottoDto["prodotto"])]
+2021-03-03 13:47:25.381  WARN 6628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 13:48:22.142  WARN 6628 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `it.iad.jpademo.model.Prodotto` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: it.iad.jpademo.dto.ProdottoDto["prodotto"])]
+2021-03-03 13:52:20.162  WARN 7328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 13:52:55.210 DEBUG 7328 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:52:55.214 TRACE 7328 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [abc]
+2021-03-03 13:52:55.246 DEBUG 7328 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:52:55.247 TRACE 7328 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [abc]
+2021-03-03 13:52:55.340 DEBUG 7328 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:52:56.580 DEBUG 7328 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:52:56.581 TRACE 7328 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [abc]
+2021-03-03 13:52:56.591 DEBUG 7328 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:53:11.878 DEBUG 7328 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:53:11.879 TRACE 7328 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [qwe]
+2021-03-03 13:53:11.880 DEBUG 7328 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:53:11.881 TRACE 7328 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [qwe]
+2021-03-03 13:53:11.889 DEBUG 7328 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:53:12.856 DEBUG 7328 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 13:53:12.865 DEBUG 7328 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:53:42.603 DEBUG 7328 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:53:42.603 TRACE 7328 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [palle]
+2021-03-03 13:53:42.605 DEBUG 7328 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:53:42.605 TRACE 7328 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [palle]
+2021-03-03 13:53:42.611 DEBUG 7328 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:53:48.369 DEBUG 7328 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:53:48.370 TRACE 7328 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [cazzo]
+2021-03-03 13:53:48.371 DEBUG 7328 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:53:48.372 TRACE 7328 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [cazzo]
+2021-03-03 13:53:48.379 DEBUG 7328 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:53:50.152 DEBUG 7328 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 13:53:50.161 DEBUG 7328 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:54:38.531 DEBUG 7328 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:54:38.532 TRACE 7328 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a]
+2021-03-03 13:54:38.535 DEBUG 7328 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:54:38.536 TRACE 7328 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a]
+2021-03-03 13:54:38.545 DEBUG 7328 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:54:40.598 DEBUG 7328 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:54:40.598 TRACE 7328 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [b]
+2021-03-03 13:54:40.600 DEBUG 7328 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:54:40.601 TRACE 7328 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [b]
+2021-03-03 13:54:40.608 DEBUG 7328 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:54:43.251 DEBUG 7328 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 13:54:43.258 DEBUG 7328 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:54:44.891 DEBUG 7328 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:54:44.892 TRACE 7328 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a]
+2021-03-03 13:54:44.893 DEBUG 7328 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:54:44.893 TRACE 7328 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a]
+2021-03-03 13:54:44.899 DEBUG 7328 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:54:46.546 DEBUG 7328 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:54:46.547 TRACE 7328 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [b]
+2021-03-03 13:54:46.549 DEBUG 7328 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:54:46.549 TRACE 7328 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [b]
+2021-03-03 13:54:46.557 DEBUG 7328 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:54:52.513 DEBUG 7328 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 13:54:52.524 DEBUG 7328 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:55:03.378 DEBUG 7328 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 13:55:03.379 TRACE 7328 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [asdwqaw]
+2021-03-03 13:55:03.380 DEBUG 7328 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 13:55:03.380 TRACE 7328 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [asdwqaw]
+2021-03-03 13:55:03.385 DEBUG 7328 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:55:04.891 DEBUG 7328 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 13:55:04.899 DEBUG 7328 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 13:59:58.649  WARN 9752 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 14:00:20.943 DEBUG 9752 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 14:00:24.980 DEBUG 9752 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 14:00:24.982 TRACE 9752 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [abc]
+2021-03-03 14:00:24.994 DEBUG 9752 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 14:00:24.995 TRACE 9752 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [abc]
+2021-03-03 14:00:25.002 DEBUG 9752 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 14:00:28.410 DEBUG 9752 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 14:00:28.410 TRACE 9752 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [def]
+2021-03-03 14:00:28.412 DEBUG 9752 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 14:00:28.413 TRACE 9752 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [def]
+2021-03-03 14:00:28.424 DEBUG 9752 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 14:00:57.991 DEBUG 9752 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_

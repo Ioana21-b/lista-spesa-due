@@ -1,3 +1,3 @@
 export class Prodotto{
-    nome: String;
+    nome: string;
 }

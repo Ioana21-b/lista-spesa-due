@@ -12,37 +12,42 @@ import { ProdottoDto } from './prodottoDto';
 })
 export class AppComponent {
   title = 'lista-spesa-due-client';
-  nome: String;
-  lista: Array<Prodotto> = this.aggiornaLista();
+  nome: string;
+  lista: Array<Prodotto> = this.mostraLista();
   prod1: Prodotto;
   prodottoDto: ProdottoDto;
   listaOggetti: Array<Prodotto>;
 
- 
+
   constructor(private http: HttpClient){}
 
-  aggiungi(nome: String) {
+  // tslint:disable-next-line:typedef
+  aggiungi(nome: string) {
   this.prod1 = new Prodotto();
-  this.prod1.nome= this.nome;
-  this.prodottoDto= new ProdottoDto();
-  this.prodottoDto.prodotto= this.prod1;
-  let oss: Observable<ProdottoDto> = this.http
-  .post<ProdottoDto>('http://localhost:8080/aggiungi',
+  this.prod1.nome = this.nome;
+  this.prodottoDto = new ProdottoDto();
+  this.prodottoDto.prodotto = this.prod1;
+  const oss: Observable<listaDto> = this.http
+  .post<listaDto>('http://localhost:8080/aggiungi',
     this.prodottoDto);
-    this.aggiornaLista;
+  oss.subscribe(l => this.lista = l.lista);
+  this.nome = '';
 }
 
+  // tslint:disable-next-line:typedef
   reset() {
-    let oss = this.http
-    .get('http://localhost:8080/reset');
-    this.aggiornaLista;
+    const oss: Observable<listaDto> = this.http
+      .post<listaDto>('http://localhost:8080/reset',
+        this.prodottoDto);
+    oss.subscribe(l => this.lista = l.lista);
+    this.nome = '';
   }
 
-  aggiornaLista(): Array<Prodotto> {
-    this.http
-    .get('http://localhost:8080/mostraLista');
-    let oss : Observable<listaDto>;
-    oss.subscribe(i => this.lista=i.lista);
+  mostraLista(): Array<Prodotto> {
+    const oss: Observable<listaDto> = this.http
+      .post<listaDto>('http://localhost:8080/mostraLista',
+        this.prodottoDto);
+    oss.subscribe(l => this.lista = l.lista);
     return this.lista;
   }
 }

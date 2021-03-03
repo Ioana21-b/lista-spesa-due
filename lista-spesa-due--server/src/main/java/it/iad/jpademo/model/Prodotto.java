@@ -22,6 +22,9 @@ public class Prodotto {
         this.nome = nome;
     }
 
+    public Prodotto() {
+    }
+
     public String getNome() {
         return nome;
     }

@@ -7,7 +7,7 @@ import java.util.List;
 public interface DemoService {
 
     void demo();
-    void aggiungi(Prodotto p);
-    void reset();
-    List<Prodotto> stampaLista();
+    List<Prodotto> aggiungi(Prodotto p);
+    List<Prodotto> reset();
+    List<Prodotto> mostraLista();
 }

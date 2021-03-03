@@ -2,6 +2,6 @@
 <button (click)="aggiungi(nome)">Aggiungi</button>
 <button (click)="reset()">Reset</button>
 <br>
-<ul *ngFor="let p of lista">
-  <li>{{p.nome}}</li>
+<ul>
+  <li *ngFor="let p of lista">{{p.nome}}</li>
 </ul>
