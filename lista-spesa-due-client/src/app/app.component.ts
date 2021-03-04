@@ -14,9 +14,10 @@ export class AppComponent {
   title = 'lista-spesa-due-client';
   nome: string;
   lista: Array<Prodotto>;
-  prod1: Prodotto;
+  prodAgg: Prodotto;
   prodottoDto: ProdottoDto;
   listaOggetti: Array<Prodotto>;
+  prodCanc: Prodotto;
 
   constructor(private http: HttpClient) {
     this.mostraLista();
@@ -24,10 +25,10 @@ export class AppComponent {
 
   // tslint:disable-next-line:typedef
   aggiungi(nome: string) {
-    this.prod1 = new Prodotto();
-    this.prod1.nome = this.nome;
+    this.prodAgg = new Prodotto();
+    this.prodAgg.nome = this.nome;
     this.prodottoDto = new ProdottoDto();
-    this.prodottoDto.prodotto = this.prod1;
+    this.prodottoDto.prodotto = this.prodAgg;
     const oss: Observable<listaDto> = this.http
       .post<listaDto>('http://localhost:8080/aggiungi',
         this.prodottoDto);
@@ -53,5 +54,13 @@ export class AppComponent {
       this.lista = l.lista;
     });
     console.log(4);
+  }
+  
+  cancella(prodCanc: Prodotto){
+    this.prodottoDto = new ProdottoDto();
+    this.prodottoDto.prodotto = prodCanc;
+    const oss: Observable<listaDto> = this.http
+    .post<listaDto>('http://localhost:8080/cancella',this.prodottoDto);
+    oss.subscribe(z => this.lista = z.lista);
   }
 }

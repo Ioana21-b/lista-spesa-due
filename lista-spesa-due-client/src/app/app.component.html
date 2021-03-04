@@ -3,5 +3,8 @@
 <button (click)="reset()">Reset</button>
 <br>
 <ul>
-  <li *ngFor="let p of lista">{{p.nome}}</li>
+  <li *ngFor="let p of lista">
+    {{p.nome}}
+    <button (click)="cancella(p)">x</button>
+  </li>
 </ul>
