@@ -72,4 +72,12 @@ public class DemoServiceImpl implements DemoService {
         List<Prodotto> lista = prodottoRepository.findAll();
         return lista;
     }
+    
+     @Override
+    public List<Prodotto> cancella(Prodotto p) {
+        System.out.println("Hai rimosso: " + p.toString());
+        prodottoRepository.delete(p);
+        List<Prodotto> lista = mostraLista();
+        return lista;
+    }
 }

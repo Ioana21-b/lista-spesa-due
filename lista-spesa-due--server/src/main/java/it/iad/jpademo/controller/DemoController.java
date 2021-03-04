@@ -45,4 +45,11 @@ public class DemoController {
         List<Prodotto> lista = demoService.mostraLista();
         return new ListaDto(lista);
     }
+    
+   @RequestMapping("/cancella")
+    public ListaDto cancella(@RequestBody ProdottoDto prodottoDto) {
+        System.out.println("Siamo nel controller cancella");
+        List<Prodotto> lista = demoService.cancella(prodottoDto.getProdotto());
+        return new ListaDto(lista);
+    }
 }

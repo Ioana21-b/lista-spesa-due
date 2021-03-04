@@ -10,4 +10,5 @@ public interface DemoService {
     List<Prodotto> aggiungi(Prodotto p);
     List<Prodotto> reset();
     List<Prodotto> mostraLista();
+    List<Prodotto> cancella(Prodotto p);
 }
