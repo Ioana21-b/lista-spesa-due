@@ -201,3 +201,101 @@
 2021-03-03 14:00:28.413 TRACE 9752 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [def]
 2021-03-03 14:00:28.424 DEBUG 9752 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
 2021-03-03 14:00:57.991 DEBUG 9752 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 14:32:05.072  WARN 15664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 17:03:40.250  WARN 15916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 17:11:47.569 DEBUG 15916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:12:00.885 DEBUG 15916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 17:12:00.904 TRACE 15916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Mele]
+2021-03-03 17:12:00.940 DEBUG 15916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 17:12:00.941 TRACE 15916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Mele]
+2021-03-03 17:12:00.963 DEBUG 15916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:13:02.807 DEBUG 15916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 17:13:02.808 TRACE 15916 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Pere]
+2021-03-03 17:13:02.813 DEBUG 15916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 17:13:02.816 TRACE 15916 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Pere]
+2021-03-03 17:13:02.829 DEBUG 15916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:13:43.940 DEBUG 15916 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 17:13:43.970 DEBUG 15916 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:14:58.903 DEBUG 15916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 17:14:58.909 DEBUG 15916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:16:10.872 DEBUG 15916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:16:12.323 DEBUG 15916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:19:52.594 DEBUG 15916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:23:36.284 DEBUG 15916 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:23:49.007 DEBUG 15916 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:23:53.258 DEBUG 15916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:24:31.582 DEBUG 15916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:24:36.978 DEBUG 15916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:28:19.342 DEBUG 15916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 17:28:35.711 DEBUG 15916 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:17:48.868  WARN 17768 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-03 19:17:50.534 DEBUG 17768 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:08.740 DEBUG 17768 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:12.255 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:18:12.262 TRACE 17768 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:18:12.289 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:18:12.291 TRACE 17768 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:18:12.317 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:15.911 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:18:15.912 TRACE 17768 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:18:15.917 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:18:15.918 TRACE 17768 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:18:15.930 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:20.071 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:18:20.074 TRACE 17768 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [benane]
+2021-03-03 19:18:20.079 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:18:20.081 TRACE 17768 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [benane]
+2021-03-03 19:18:20.091 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:38.931 DEBUG 17768 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:42.327 DEBUG 17768 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:18:48.706 DEBUG 17768 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 19:18:48.721 DEBUG 17768 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:28:57.752 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:28:57.753 TRACE 17768 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:28:57.758 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:28:57.759 TRACE 17768 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:28:57.781 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:02.401 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:02.402 TRACE 17768 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:02.411 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:05.807 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:05.809 TRACE 17768 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:05.815 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:09.630 DEBUG 17768 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:09.632 TRACE 17768 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:29:09.634 DEBUG 17768 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:29:09.636 TRACE 17768 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:29:09.647 DEBUG 17768 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:14.052 DEBUG 17768 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:14.054 TRACE 17768 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele ]
+2021-03-03 19:29:14.058 DEBUG 17768 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:29:14.060 TRACE 17768 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele ]
+2021-03-03 19:29:14.071 DEBUG 17768 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:19.823 DEBUG 17768 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:19.825 TRACE 17768 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:29:19.830 DEBUG 17768 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:22.963 DEBUG 17768 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:22.965 TRACE 17768 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:22.973 DEBUG 17768 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:27.098 DEBUG 17768 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:31.478 DEBUG 17768 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:31.479 TRACE 17768 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:31.484 DEBUG 17768 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:32.191 DEBUG 17768 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from prodotto
+2021-03-03 19:29:32.203 DEBUG 17768 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:35.536 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:35.537 TRACE 17768 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:35.540 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:29:35.541 TRACE 17768 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:35.552 DEBUG 17768 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:38.924 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:38.925 TRACE 17768 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:29:38.927 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into prodotto (nome) values (?)
+2021-03-03 19:29:38.929 TRACE 17768 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:29:38.940 DEBUG 17768 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:42.038 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:42.039 TRACE 17768 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mele]
+2021-03-03 19:29:42.043 DEBUG 17768 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_
+2021-03-03 19:29:45.557 DEBUG 17768 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_0_ from prodotto prodotto0_ where prodotto0_.nome=?
+2021-03-03 19:29:45.558 TRACE 17768 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [pere]
+2021-03-03 19:29:45.566 DEBUG 17768 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select prodotto0_.nome as nome1_1_ from prodotto prodotto0_

@@ -53,8 +53,8 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public List<Prodotto> aggiungi(Prodotto p) {
         System.out.println("Hai aggiunto: " + p.toString());
-       prodottoRepository.save(p);
-        List<Prodotto> lista = prodottoRepository.findAll();
+        prodottoRepository.save(p);
+        List<Prodotto> lista = mostraLista();
         return lista;
     }
 
@@ -62,12 +62,13 @@ public class DemoServiceImpl implements DemoService {
     public List<Prodotto> reset() {
         System.out.println("Hai rimosso tutto");
         prodottoRepository.deleteAllInBatch();
-        List<Prodotto> lista = prodottoRepository.findAll();
+        List<Prodotto> lista = mostraLista();
         return lista;
     }
 
     @Override
     public List<Prodotto> mostraLista() {
+        System.out.println("Lista Aggiornata");
         List<Prodotto> lista = prodottoRepository.findAll();
         return lista;
     }
